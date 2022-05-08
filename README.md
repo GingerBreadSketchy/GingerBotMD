@@ -66,7 +66,7 @@ https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 heroku/nodejs
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD2/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kadennotermux/jinch)
 
 # Install Manually 👇
 ## `Requirements`
