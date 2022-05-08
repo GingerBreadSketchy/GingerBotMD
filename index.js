@@ -62,7 +62,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['ginger','Safari','1.0.0'],
         auth: state
     })
 
@@ -147,16 +147,16 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     XeonBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-🐶✑ Hi👋 @${num.split("@")[0]},
-🐶✑ Welcome To ${metadata.subject}
+✡✑ Hi👋 @${num.split("@")[0]},
+✡✑ Welcome To ${metadata.subject}
 
-🐶✑ Description: ${metadata.desc}
+✡✑ Description: ${metadata.desc}
 
-🐶✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+✡✑ Welcome To Our HOME😌!!`} )
                 } else if (anu.action == 'remove') {
-                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `🐶✑ @${num.split("@")[0]} Left ${metadata.subject}
+                    XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `✡✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-🐶✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+✡✑ Never Join our Group again IDIOT!!!😌✨` })
                 }
             }
         } catch (err) {
@@ -235,13 +235,13 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
             if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("🦄Connection closed, reconnecting...."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("🦄Connection Lost from Server, reconnecting..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("🦄Connection Replaced, Another New Session Opened, Please Close Current Session First"); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`🦄Device Logged Out, Please Scan Again And Run.`); XeonBotInc.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("🦄Restart Required, Restarting..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("🦄Connection TimedOut, Reconnecting..."); startXeonBotInc(); }
-            else XeonBotInc.end(`🦄Unknown DisconnectReason: ${reason}|${connection}`)
+            else if (reason === DisconnectReason.connectionClosed) { console.log("🔱Connection closed, reconnecting...."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("🔱Connection Lost from Server, reconnecting..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("🔱Connection Replaced, Another New Session Opened, Please Close Current Session First"); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`🔱Device Logged Out, Please Scan Again And Run.`); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("🔱Restart Required, Restarting..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("🔱Connection TimedOut, Reconnecting..."); startXeonBotInc(); }
+            else XeonBotInc.end(`🔱Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
     })
