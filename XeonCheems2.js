@@ -253,12 +253,12 @@ const reply = (teks) => {
         if (budy.match(`chat.whatsapp.com`)) {
         reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !`)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
-        let gclink = (`https://chat.whatsapp.com/`+await XeonBotInc.groupInviteCode(m.chat))
+        let gclink = (`https:///`+await XeonBotInc.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
         if (isgclink) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Sent This Group Link❤️`)
         if (isAdmins) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are An Admin Of The Group❤️`)
-        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh🐶`)
+        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh🔰`)
         XeonBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -600,7 +600,7 @@ if (q.includes('--help')) return reply(examkosong)
      teksehmazeh += `*🐄Cow* : ${getSapi(m.sender)}\n`
      teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
      teksehmazeh += `_*${pushname}*_`
-     await XeonBotInc.send5ButImg(from, `` + '' + teksehmazeh, `© ${footer}`, xeonbotinc, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}}])
+     await XeonBotInc.send5ButImg(from, `` + '' + teksehmazeh, `© ${footer}`, xeonbotinc, [{"urlButton": {"displayText": "YT","url": `${myweb}`}}])
   }
   break
         case 'userlimit': 
@@ -1232,7 +1232,7 @@ case 'awesomecheck':
 XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
 					break
 					case 'charactercheck':
-					//YouTube📍 by xeon⛔\\
+					//YT by xeon⛔\\
 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
 					const xeony =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
@@ -1359,7 +1359,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                if (!text) return replay(`Example : ${prefix + command} packname|author`)
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
-          reply(`Exif Has Been Successfully Changed to\n\n🐶 Packname : ${global.packname}\n🐶 Author : ${global.author}`)
+          reply(`Exif Has Been Successfully Changed to\n\n🔰 Packname : ${global.packname}\n🔰 Author : ${global.author}`)
             }
             break
 	case 'kick': {
@@ -1447,11 +1447,11 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
+let teks = `╚»˙·٠•●♥ GɪɴGᴇʀBᴏᴛMD Tags♥●•٠·˙«╝ 
  
  ➲ *Message : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
-                teks += `🐶 @${mem.id.split('@')[0]}\n`
+                teks += `🔰 @${mem.id.split('@')[0]}\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -1471,7 +1471,7 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
                 let anu = await styletext(text)
                 let teks = `Entered Text ${text}\n\n`
                 for (let i of anu) {
-                    teks += `🐶 *${i.name}* : ${i.result}\n\n`
+                    teks += `🔰 *${i.name}* : ${i.result}\n\n`
                 }
                 reply(teks)
 	    }
@@ -1757,7 +1757,7 @@ break
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YT',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -1767,11 +1767,11 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '😎OWNER😎',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 GɪɴGᴇʀBᴏᴛMD Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(i, txt, XeonBotInc.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1791,7 +1791,7 @@ break
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YT',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -1801,11 +1801,11 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '😎OWNER😎',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 GɪɴGᴇʀBᴏᴛMD Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(yoi, txt, XeonBotInc.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -1820,8 +1820,8 @@ break
                     let read = i.readTimestamp
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
-                    teks += `🐶 @${i.userJid.split('@')[0]}\n`
-                    teks += ` ┗━🐶 *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} 🐶 *Status :* ${read ? 'Read' : 'Sent'}\n\n`
+                    teks += `🔰 @${i.userJid.split('@')[0]}\n`
+                    teks += ` ┗━🔰 *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} 🔰 *Status :* ${read ? 'Read' : 'Sent'}\n\n`
                 }
                 XeonBotInc.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1838,7 +1838,7 @@ break
                  let teks = `⬣ *PERSONAL CHAT LIST*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `🐕 *Name :* ${nama}\n🐕 *User :* @${i.split('@')[0]}\n🐕 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
+                     teks += `📛 *Name :* ${nama}\n📛 *User :* @${i.split('@')[0]}\n📛 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1848,7 +1848,7 @@ break
                  let teks = `⬣ *GROUP CHAT LIST*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await XeonBotInc.groupMetadata(i)
-                     teks += `🐕 *Name :* ${metadata.subject}\n🐕 *Owner :* @${metadata.owner.split('@')[0]}\n🐕 *ID :* ${metadata.id}\n🐕 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n🐕 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `📛 *Name :* ${metadata.subject}\n📛 *Owner :* @${metadata.owner.split('@')[0]}\n📛 *ID :* ${metadata.id}\n📛 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n📛 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1856,7 +1856,7 @@ break
              case 'listonlinexxx': case 'onlinelistxxx': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
-                    XeonBotInc.sendText(m.chat, 'Online List:\n\n' + online.map(v => '🐶 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+                    XeonBotInc.sendText(m.chat, 'Online List:\n\n' + online.map(v => '🔰 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
@@ -2029,7 +2029,7 @@ break
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `🐶 No : ${no++}\n🐶 Type : ${i.type}\n🐶 Video ID : ${i.videoId}\n🐶 Title : ${i.title}\n🐶 Views : ${i.views}\n🐶 Duration : ${i.timestamp}\n🐶 Uploaded On : ${i.ago}\n🐶 Author : ${i.author.name}\n🐶 Url : ${i.url}\n\n─────────────────\n\n`
+                    teks += `🔰 No : ${no++}\n🔰 Type : ${i.type}\n🔰 Video ID : ${i.videoId}\n🔰 Title : ${i.title}\n🔰 Views : ${i.views}\n🔰 Duration : ${i.timestamp}\n🔰 Uploaded On : ${i.ago}\n🔰 Author : ${i.author.name}\n🔰 Url : ${i.url}\n\n─────────────────\n\n`
                 }
                 XeonBotInc.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -2040,9 +2040,9 @@ break
                 google({'query': text}).then(res => {
                 let teks = `Google Search Title : ${text}\n\n`
                 for (let g of res) {
-                teks += `🐶 *Title* : ${g.title}\n`
-                teks += `🐶 *Description* : ${g.snippet}\n`
-                teks += `🐶 *Link* : ${g.link}\n\n────────────────────────\n\n`
+                teks += `🔰 *Title* : ${g.title}\n`
+                teks += `🔰 *Description* : ${g.snippet}\n`
+                teks += `🔰 *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
                 reply(teks)
                 })
@@ -2082,16 +2082,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🐶 Title : ${anu.title}
-🐶 Ext : Search
-🐶 ID : ${anu.videoId}
-🐶 Duration : ${anu.timestamp}
-🐶 Viewes : ${anu.views}
-🐶 Uploaded On : ${anu.ago}
-🐶 Author : ${anu.author.name}
-🐶 Channel : ${anu.author.url}
-🐶 Description : ${anu.description}
-🐶 Url : ${anu.url}`,
+🔰 Title : ${anu.title}
+🔰 Ext : Search
+🔰 ID : ${anu.videoId}
+🔰 Duration : ${anu.timestamp}
+🔰 Viewes : ${anu.views}
+🔰 Uploaded On : ${anu.ago}
+🔰 Author : ${anu.author.name}
+🔰 Channel : ${anu.author.url}
+🔰 Description : ${anu.description}
+🔰 Url : ${anu.url}`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2105,7 +2105,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `🐶 Title : ${media.title}\n🐶 File Size : ${media.filesizeF}\n🐶 Url : ${isUrl(text)}\n🐶 Ext : MP3\n🐶 Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `🔰 Title : ${media.title}\n🔰 File Size : ${media.filesizeF}\n🔰 Url : ${isUrl(text)}\n🔰 Ext : MP3\n🔰 Resolution : ${args[1] || '320kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2115,7 +2115,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐶 Title : ${media.title}\n🐶 File Size : ${media.filesizeF}\n🐶 Url : ${isUrl(text)}\n🐶 Ext : MP3\n🐶 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔰 Title : ${media.title}\n🔰 File Size : ${media.filesizeF}\n🔰 Url : ${isUrl(text)}\n🔰 Ext : MP3\n🔰 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
@@ -2124,7 +2124,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendImage(m.chat, media.thumb, `🐶 Title : ${media.title}\n🐶 File Size : ${media.filesizeF}\n🐶 Url : ${urls[text - 1]}\n🐶 Ext : MP3\n🐶 Resolution : ${args[1] || '128kbps'}`, m)
+                XeonBotInc.sendImage(m.chat, media.thumb, `🔰 Title : ${media.title}\n🔰 File Size : ${media.filesizeF}\n🔰 Url : ${urls[text - 1]}\n🔰 Ext : MP3\n🔰 Resolution : ${args[1] || '128kbps'}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2138,7 +2138,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐶 Title : ${media.title}\n🐶 File Size : ${media.filesizeF}\n🐶 Url : ${urls[text - 1]}\n🐶 Ext : MP3\n🐶 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔰 Title : ${media.title}\n🔰 File Size : ${media.filesizeF}\n🔰 Url : ${urls[text - 1]}\n🔰 Ext : MP3\n🔰 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -2146,7 +2146,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '🐶 Media Url : '+result }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '🔰 Media Url : '+result }, { quoted: m })
             }
             break
 case 'webtonsearch': case 'webtoon':
@@ -2222,7 +2222,7 @@ case 'webtonsearch': case 'webtoon':
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "YT",
 						"url": `${myweb}`
 						}
 					}
@@ -2246,7 +2246,7 @@ case 'webtonsearch': case 'webtoon':
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "YT",
 						"url": `${myweb}`
 						}
 					}
@@ -2294,7 +2294,7 @@ case 'webtonsearch': case 'webtoon':
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `🐶 Title : ${result.title}\n🐶 Category : ${result.type}\n🐶 Detail : ${result.source}\n🐶 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `🔰 Title : ${result.title}\n🔰 Category : ${result.type}\n🔰 Detail : ${result.source}\n🔰 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2312,7 +2312,7 @@ case 'webtonsearch': case 'webtoon':
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
-                    caption: `🐶 Title : ${result.title}\n🐶 Source : ${result.source}\n🐶 Media Url : ${result.image}`,
+                    caption: `🔰 Title : ${result.title}\n🔰 Source : ${result.source}\n🔰 Media Url : ${result.image}`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2357,17 +2357,17 @@ case 'webtonsearch': case 'webtoon':
 	    }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
+                if (!Number(text)) return reply(`Example : ${prefix + command} 254792893310`)
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Phone Number :* ${anu.message.nomer_hp}\n🐶 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🐶 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🐶 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Phone Number :* ${anu.message.nomer_hp}\n🔰 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🔰 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🔰 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
             }
             break
             case 'artimimpi': case 'tafsirmimpi': {
                 if (!text) return reply(`Example : ${prefix + command} belanja`)
                 let anu = await primbon.tafsir_mimpi(text)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Dream :* ${anu.message.mimpi}\n🐶 *Meaning :* ${anu.message.arti}\n🐶 *Solution :* ${anu.message.solusi}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Dream :* ${anu.message.mimpi}\n🔰 *Meaning :* ${anu.message.arti}\n🔰 *Solution :* ${anu.message.solusi}`, m)
             }
             break
             case 'ramalanjodoh': case 'ramaljodoh': {
@@ -2375,7 +2375,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Your Name :* ${anu.message.nama_anda.nama}\n🐶 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🐶 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🐶 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Your Name :* ${anu.message.nama_anda.nama}\n🔰 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
@@ -2383,7 +2383,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Your Name :* ${anu.message.nama_anda.nama}\n🐶 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🐶 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🐶 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Your Name :* ${anu.message.nama_anda.nama}\n🔰 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'suamiistri': {
@@ -2391,7 +2391,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Husband's Name :* ${anu.message.suami.nama}\n🐶 *Husband Born :* ${anu.message.suami.tgl_lahir}\n🐶 *Wife's Name :* ${anu.message.istri.nama}\n🐶 *Born Wife :* ${anu.message.istri.tgl_lahir}\n🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Husband's Name :* ${anu.message.suami.nama}\n🔰 *Husband Born :* ${anu.message.suami.tgl_lahir}\n🔰 *Wife's Name :* ${anu.message.istri.nama}\n🔰 *Born Wife :* ${anu.message.istri.tgl_lahir}\n🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
@@ -2399,14 +2399,14 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Your Name :* ${anu.message.nama_anda.nama}\n🐶 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🐶 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🐶 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🐶 *Positive Side :* ${anu.message.sisi_positif}\n🐶 *Negative Side :* ${anu.message.sisi_negatif}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Your Name :* ${anu.message.nama_anda.nama}\n🔰 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰 *Positive Side :* ${anu.message.sisi_positif}\n🔰 *Negative Side :* ${anu.message.sisi_negatif}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'artinama': {
                 if (!text) throw `Example : ${prefix + command} Dika Ardianta`
                 let anu = await primbon.arti_nama(text)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Meaning :* ${anu.message.arti}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Meaning :* ${anu.message.arti}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'kecocokannama': case 'cocoknama': {
@@ -2414,7 +2414,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Life Path :* ${anu.message.life_path}\n🐶 *Destiny :* ${anu.message.destiny}\n🐶 *Destiny Desire :* ${anu.message.destiny_desire}\n🐶 *Personality :* ${anu.message.personality}\n🐶 *Percentage :* ${anu.message.persentase_kecocokan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Life Path :* ${anu.message.life_path}\n🔰 *Destiny :* ${anu.message.destiny}\n🔰 *Destiny Desire :* ${anu.message.destiny_desire}\n🔰 *Personality :* ${anu.message.personality}\n🔰 *Percentage :* ${anu.message.persentase_kecocokan}`, m)
             }
             break
             case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
@@ -2422,7 +2422,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, nama2] = text.split`|`
                 let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendImage(m.chat,  anu.message.gambar, `🐶 *Your Name :* ${anu.message.nama_anda}\n🐶 *Couple Name :* ${anu.message.nama_pasangan}\n🐶 *Positive Side :* ${anu.message.sisi_positif}\n🐶 *Negative Side :* ${anu.message.sisi_negatif}`, m)
+                XeonBotInc.sendImage(m.chat,  anu.message.gambar, `🔰 *Your Name :* ${anu.message.nama_anda}\n🔰 *Couple Name :* ${anu.message.nama_pasangan}\n🔰 *Positive Side :* ${anu.message.sisi_positif}\n🔰 *Negative Side :* ${anu.message.sisi_negatif}`, m)
             }
             break
             case 'jadianpernikahan': case 'jadiannikah': {
@@ -2430,7 +2430,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.tanggal_jadian_pernikahan(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Wedding Date :* ${anu.message.tanggal}\n🐶 *Characteristics :* ${anu.message.karakteristik}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Wedding Date :* ${anu.message.tanggal}\n🔰 *Characteristics :* ${anu.message.karakteristik}`, m)
             }
             break
             case 'sifatusaha': {
@@ -2438,7 +2438,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_usaha_bisnis(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Born :* ${anu.message.hari_lahir}\n🐶 *Business :* ${anu.message.usaha}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Born :* ${anu.message.hari_lahir}\n🔰 *Business :* ${anu.message.usaha}`, m)
             }
             break
             case 'rejeki': case 'rezeki': {
@@ -2446,7 +2446,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.rejeki_hoki_weton(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Born :* ${anu.message.hari_lahir}\n🐶 *Sustenance :* ${anu.message.rejeki}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Born :* ${anu.message.hari_lahir}\n🔰 *Sustenance :* ${anu.message.rejeki}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'pekerjaan': case 'kerja': {
@@ -2454,7 +2454,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.pekerjaan_weton_lahir(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Born :* ${anu.message.hari_lahir}\n🐶 *Profession :* ${anu.message.pekerjaan}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Born :* ${anu.message.hari_lahir}\n🔰 *Profession :* ${anu.message.pekerjaan}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalannasib': case 'ramalnasib': case 'nasib': {
@@ -2462,7 +2462,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.ramalan_nasib(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Analysis :* ${anu.message.analisa}\n🐶 *Root Number :* ${anu.message.angka_akar}\n🐶 *Nature :* ${anu.message.sifat}\n🐶 *Element :* ${anu.message.elemen}\n🐶 *Lucky Numbers :* ${anu.message.angka_keberuntungan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Analysis :* ${anu.message.analisa}\n🔰 *Root Number :* ${anu.message.angka_akar}\n🔰 *Nature :* ${anu.message.sifat}\n🔰 *Element :* ${anu.message.elemen}\n🔰 *Lucky Numbers :* ${anu.message.angka_keberuntungan}`, m)
             }
             break
             case 'potensipenyakit': case 'penyakit': {
@@ -2470,7 +2470,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.cek_potensi_penyakit(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Analysis :* ${anu.message.analisa}\n🐶 *Sector :* ${anu.message.sektor}\n?? *Element :* ${anu.message.elemen}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Analysis :* ${anu.message.analisa}\n🔰 *Sector :* ${anu.message.sektor}\n?? *Element :* ${anu.message.elemen}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'artitarot': case 'tarot': {
@@ -2478,7 +2478,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.arti_kartu_tarot(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendImage(m.chat, anu.message.image, `🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Tarot Symbol :* ${anu.message.simbol_tarot}\n🐶 *Meaning :* ${anu.message.arti}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendImage(m.chat, anu.message.image, `🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Tarot Symbol :* ${anu.message.simbol_tarot}\n🔰 *Meaning :* ${anu.message.arti}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'fengshui': {
@@ -2486,7 +2486,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, gender, tahun] = text.split`,`
                 let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Born :* ${anu.message.tahun_lahir}\n🐶 *Gender :* ${anu.message.jenis_kelamin}\n🐶 *Kua Number :* ${anu.message.angka_kua}\n🐶 *Group :* ${anu.message.kelompok}\n🐶 *Character :* ${anu.message.karakter}\n🐶 *Good Sector :* ${anu.message.sektor_baik}\n🐶 *Bad Sector :* ${anu.message.sektor_buruk}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Born :* ${anu.message.tahun_lahir}\n🔰 *Gender :* ${anu.message.jenis_kelamin}\n🔰 *Kua Number :* ${anu.message.angka_kua}\n🔰 *Group :* ${anu.message.kelompok}\n🔰 *Character :* ${anu.message.karakter}\n🔰 *Good Sector :* ${anu.message.sektor_baik}\n🔰 *Bad Sector :* ${anu.message.sektor_buruk}`, m)
             }
             break
             case 'haribaik': {
@@ -2494,7 +2494,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.petung_hari_baik(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *When Challenged :* ${anu.message.kala_tinantang}\n🐶 *Info :* ${anu.message.info}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *When Challenged :* ${anu.message.kala_tinantang}\n🔰 *Info :* ${anu.message.info}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'harisangar': case 'taliwangke': {
@@ -2502,7 +2502,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.hari_sangar_taliwangke(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Results :* ${anu.message.result}\n🐶 *Info :* ${anu.message.info}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Results :* ${anu.message.result}\n🔰 *Info :* ${anu.message.info}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'harinaas': case 'harisial': {
@@ -2510,7 +2510,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_hari_naas(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Day Of Birth :* ${anu.message.hari_lahir}\n🐶 *Date Of Birth :* ${anu.message.tgl_lahir}\n🐶 *Fateful Day :* ${anu.message.hari_naas}\n🐶 *Info :* ${anu.message.catatan}\n🐶 *Notes :* ${anu.message.info}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Day Of Birth :* ${anu.message.hari_lahir}\n🔰 *Date Of Birth :* ${anu.message.tgl_lahir}\n🔰 *Fateful Day :* ${anu.message.hari_naas}\n🔰 *Info :* ${anu.message.catatan}\n🔰 *Notes :* ${anu.message.info}`, m)
             }
             break
             case 'nagahari': case 'harinaga': {
@@ -2518,7 +2518,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.rahasia_naga_hari(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Day Of Birth :* ${anu.message.hari_lahir}\n🐶 *Date Of Birth :* ${anu.message.tgl_lahir}\n🐶 *Dragon Day Direction :* ${anu.message.arah_naga_hari}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Day Of Birth :* ${anu.message.hari_lahir}\n🔰 *Date Of Birth :* ${anu.message.tgl_lahir}\n🔰 *Dragon Day Direction :* ${anu.message.arah_naga_hari}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'arahrejeki': case 'arahrezeki': {
@@ -2526,7 +2526,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_arah_rejeki(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Day Of Birth :* ${anu.message.hari_lahir}\n🐶 *Date Of Birth :* ${anu.message.tgl_lahir}\n🐶 *Sustenance Direction :* ${anu.message.arah_rejeki}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Day Of Birth :* ${anu.message.hari_lahir}\n🔰 *Date Of Birth :* ${anu.message.tgl_lahir}\n🔰 *Sustenance Direction :* ${anu.message.arah_rejeki}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'peruntungan': {
@@ -2534,7 +2534,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn, untuk] = text.split`,`
                 let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Fortune Of The Year :* ${anu.message.peruntungan_tahun}\n🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Fortune Of The Year :* ${anu.message.peruntungan_tahun}\n🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'weton': case 'wetonjawa': {
@@ -2542,7 +2542,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.weton_jawa(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Date :* ${anu.message.tanggal}\n🐶 *Number Of Neptune :* ${anu.message.jumlah_neptu}\n🐶 *Day Character :* ${anu.message.watak_hari}\n🐶 *Dragon Day :* ${anu.message.naga_hari}\n🐶 *Good Hour :* ${anu.message.jam_baik}\n🐶 *Birth Character :* ${anu.message.watak_kelahiran}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Date :* ${anu.message.tanggal}\n🔰 *Number Of Neptune :* ${anu.message.jumlah_neptu}\n🔰 *Day Character :* ${anu.message.watak_hari}\n🔰 *Dragon Day :* ${anu.message.naga_hari}\n🔰 *Good Hour :* ${anu.message.jam_baik}\n🔰 *Birth Character :* ${anu.message.watak_kelahiran}`, m)
             }
             break
             case 'sifat': case 'karakter': {
@@ -2550,7 +2550,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Lifeline :* ${anu.message.garis_hidup}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Lifeline :* ${anu.message.garis_hidup}`, m)
             }
             break
             case 'keberuntungan': {
@@ -2558,7 +2558,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Name :* ${anu.message.nama}\n🐶 *Born :* ${anu.message.tgl_lahir}\n🐶 *Results :* ${anu.message.result}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Name :* ${anu.message.nama}\n🔰 *Born :* ${anu.message.tgl_lahir}\n🔰 *Results :* ${anu.message.result}`, m)
             }
             break
             case 'memancing': {
@@ -2566,7 +2566,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_memancing_ikan(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Date :* ${anu.message.tgl_memancing}\n🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Date :* ${anu.message.tgl_memancing}\n🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'masasubur': {
@@ -2574,7 +2574,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn, siklus] = text.split`,`
                 let anu = await primbon.masa_subur(tgl, bln, thn, siklus)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Results :* ${anu.message.result}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Results :* ${anu.message.result}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'zodiak': case 'zodiac': {
@@ -2609,14 +2609,14 @@ case 'webtonsearch': case 'webtoon':
                 
                 let anu = await primbon.zodiak(zodiac)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Zodiac :* ${anu.message.zodiak}\n🐶 *Number :* ${anu.message.nomor_keberuntungan}\n🐶 *Aroma :* ${anu.message.aroma_keberuntungan}\n🐶 *Planet :* ${anu.message.planet_yang_mengitari}\n🐶 *Flower :* ${anu.message.bunga_keberuntungan}\n🐶 *Color :* ${anu.message.warna_keberuntungan}\n🐶 *Stone :* ${anu.message.batu_keberuntungan}\n🐶 *Element :* ${anu.message.elemen_keberuntungan}\n🐶 *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n🐶 *Notes :* ${anu.message.catatan}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Zodiac :* ${anu.message.zodiak}\n🔰 *Number :* ${anu.message.nomor_keberuntungan}\n🔰 *Aroma :* ${anu.message.aroma_keberuntungan}\n🔰 *Planet :* ${anu.message.planet_yang_mengitari}\n🔰 *Flower :* ${anu.message.bunga_keberuntungan}\n🔰 *Color :* ${anu.message.warna_keberuntungan}\n🔰 *Stone :* ${anu.message.batu_keberuntungan}\n🔰 *Element :* ${anu.message.elemen_keberuntungan}\n🔰 *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n🔰 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'shio': {
                 if (!text) throw `Example : ${prefix + command} tikus\n\nNote : For Detail https://primbon.com/shio.htm`
                 let anu = await primbon.shio(text)
                 if (anu.status == false) return reply(anu.message)
-                XeonBotInc.sendText(m.chat, `🐶 *Results :* ${anu.message}`, m)
+                XeonBotInc.sendText(m.chat, `🔰 *Results :* ${anu.message}`, m)
             }
             break
 	    case 'stalker': case 'stalk': {
@@ -2658,13 +2658,13 @@ case 'webtonsearch': case 'webtoon':
                     if (!id) return reply(`No Query username, Example : ${prefix + command} ig josephxeon13`)
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'apikey'))
                     if (anu.status == false) return reply(anu.result.message)
-                    XeonBotInc.sendMedia(m.chat, anu.caption.profile_hd, '', `🐶 Full Name : ${anu.caption.full_name}\n🐶 User Name : ${anu.caption.user_name}\n🐶 ID ${anu.caption.user_id}\n🐶 Following : ${anu.caption.followers}\n🐶 Followers : ${anu.caption.following}\n🐶 Bussines : ${anu.caption.bussines}\n🐶 Professional : ${anu.caption.profesional}\n🐶 Verified : ${anu.caption.verified}\n🐶 Private : ${anu.caption.private}\n🐶 Bio : ${anu.caption.biography}\n🐶 Bio Url : ${anu.caption.bio_url}`, m)
+                    XeonBotInc.sendMedia(m.chat, anu.caption.profile_hd, '', `🔰 Full Name : ${anu.caption.full_name}\n🔰 User Name : ${anu.caption.user_name}\n🔰 ID ${anu.caption.user_id}\n🔰 Following : ${anu.caption.followers}\n🔰 Followers : ${anu.caption.following}\n🔰 Bussines : ${anu.caption.bussines}\n🔰 Professional : ${anu.caption.profesional}\n🔰 Verified : ${anu.caption.verified}\n🔰 Private : ${anu.caption.private}\n🔰 Bio : ${anu.caption.biography}\n🔰 Bio Url : ${anu.caption.bio_url}`, m)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'npm') {
                     if (!id) return reply(`No Query username, Example : ${prefix + command} npm scrape-primbon`)
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/npm', { query: id }, 'apikey'))
                     if (anu.status == false) return reply(anu.result.message)
-                    reply(`🐶 Name : ${anu.name}\n🐶 Version : ${Object.keys(anu.versions)}\n🐶 Created : ${tanggal(anu.time.created)}\n🐶 Modified : ${tanggal(anu.time.modified)}\n🐶 Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n🐶 Description : ${anu.description}\n🐶 Homepage : ${anu.homepage}\n🐶 Keywords : ${anu.keywords}\n🐶 Author : ${anu.author.name}\n🐶 License : ${anu.license}\n🐶 Readme : ${anu.readme}`)
+                    reply(`🔰 Name : ${anu.name}\n🔰 Version : ${Object.keys(anu.versions)}\n🔰 Created : ${tanggal(anu.time.created)}\n🔰 Modified : ${tanggal(anu.time.modified)}\n🔰 Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n🔰 Description : ${anu.description}\n🔰 Homepage : ${anu.homepage}\n🔰 Keywords : ${anu.keywords}\n🔰 Author : ${anu.author.name}\n🔰 License : ${anu.license}\n🔰 Readme : ${anu.readme}`)
 		    db.data.users[m.sender].limit -= 1
                 } else {
                     reply(`Example : ${prefix +command} type id\n\nList Type :\n1. ff (Free Fire)\n2. ml (Mobile Legends)\n3. aov (Arena Of Valor)\n4. cod (Call Of Duty)\n5. pb (point Blank)\n6. ig (Instagram)\n7. npm (https://npmjs.com)`)
@@ -2750,7 +2750,7 @@ case 'webtonsearch': case 'webtoon':
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/joox', { query: text }, 'apikey'))
-                let msg = await XeonBotInc.sendImage(m.chat, anu.result.img, `🐶 Title : ${anu.result.lagu}\n🐶 Album : ${anu.result.album}\n🐶 Singer : ${anu.result.penyanyi}\n🐶 Publish : ${anu.result.publish}\n🐶 Lyrics :\n${anu.result.lirik.result}`, m)
+                let msg = await XeonBotInc.sendImage(m.chat, anu.result.img, `🔰 Title : ${anu.result.lagu}\n🔰 Album : ${anu.result.album}\n🔰 Singer : ${anu.result.penyanyi}\n🔰 Publish : ${anu.result.publish}\n🔰 Lyrics :\n${anu.result.lirik.result}`, m)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.mp4aLink }, mimetype: 'audio/mpeg', fileName: anu.result.lagu+'.m4a' }, { quoted: msg })
             }
             break
@@ -2758,7 +2758,7 @@ case 'webtonsearch': case 'webtoon':
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/soundcloud', { url: isUrl(text)[0] }, 'apikey'))
-                let msg = await XeonBotInc.sendImage(m.chat, anu.result.thumb, `🐶 Title : ${anu.result.title}\n🐶 Url : ${isUrl(text)[0]}`)
+                let msg = await XeonBotInc.sendImage(m.chat, anu.result.thumb, `🔰 Title : ${anu.result.title}\n🔰 Url : ${isUrl(text)[0]}`)
                 XeonBotInc.sendMessage(m.chat, { audio: { url: anu.result.url }, mimetype: 'audio/mpeg', fileName: anu.result.title+'.m4a' }, { quoted: msg })
             }
             break
@@ -2801,7 +2801,7 @@ case 'webtonsearch': case 'webtoon':
                 if (!text) return reply(`Enter Query Link!`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
-                XeonBotInc.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `🐶 Title : ${anu.result.title}`}, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `🔰 Title : ${anu.result.title}`}, { quoted: m })
             }
             break
 	        case 'pindl': case 'pinterestdl': {
@@ -2823,11 +2823,11 @@ case 'webtonsearch': case 'webtoon':
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-🐶 Title : ${anu.title}
-🐶 Author : ${anu.author.name}
-🐶 Like : ${anu.like}
-🐶 Caption : ${anu.caption}
-🐶 Url : ${anu.media[0]}
+🔰 Title : ${anu.title}
+🔰 Author : ${anu.author.name}
+🔰 Like : ${anu.like}
+🔰 Caption : ${anu.caption}
+🔰 Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
 			footer: XeonBotInc.user.name,
@@ -2837,7 +2837,7 @@ To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp
 		    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 		} else if (anu.type == 'image') {
 		    anu.media.map(async (url) => {
-		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `🐶 Title : ${anu.title}\n🐶 Author : ${anu.author.name}\n🐶 Like : ${anu.like}\n🐶 Caption : ${anu.caption}` }, { quoted: m })
+		        XeonBotInc.sendMessage(m.chat, { image: { url }, caption: `🔰 Title : ${anu.title}\n🔰 Author : ${anu.author.name}\n🔰 Like : ${anu.like}\n🔰 Caption : ${anu.caption}` }, { quoted: m })
 		    })
 		}
 	    }
@@ -3039,7 +3039,7 @@ View List Of Messages With ${prefix}listmsg`)
 	        let seplit = Object.entries(global.db.data.database).map(([nama, isi]) => { return { nama, ...isi } })
 		let teks = '「 DATABASE LIST 」\n\n'
 		for (let i of seplit) {
-		    teks += `🐕 *Name :* ${i.nama}\n🐕 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
+		    teks += `📛 *Name :* ${i.nama}\n📛 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
 	        }
 	        reply(teks)
 	    }
@@ -3272,7 +3272,7 @@ reply("Success Changing Menu To "+q)
 break
                     case 'bug': case 'report': {
                     	if(!text) return reply(`Enter The Bug\n\nExample: ${command} Menu Error`)
-                    	XeonBotInc.sendMessage(`916909137213@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	XeonBotInc.sendMessage(`254792893310@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
@@ -3291,7 +3291,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
 ┌┤✑  Cheems Bot With You Forever 
-││✑  🐶🖐️!!
+││✑  🔰🖐️!!
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3307,7 +3307,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YT',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3317,17 +3317,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '🖱ALL MENU🖱',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: '📺MENU LIST📺',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '😎OWNER😎',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3357,7 +3357,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 │✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 │✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄??𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│✙ 𝗢𝘄n𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
 │✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
@@ -3367,7 +3367,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YT',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3377,17 +3377,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '🖱ALL MENU🖱',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: '📺MENU LIST📺',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '😎OWNER😎',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3518,11 +3518,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : \n\n🐶 Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n🐶 Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/916909137213 (Click To Contact)` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/97ad903ba5a233f75a751.jpg' }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : 0792893310 Mpesa \n\nIf You Want To Donate, Talk With The Owner First\nwa.me/254792893310 (Click To Contact)` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/DGXeon/CheemsBot-MD2\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : https://gingersketchy.netlify.app\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
             }
             break
 case 'allmenu': {
@@ -3764,12 +3764,12 @@ case 'allmenu': {
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YT',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '😎OWNER😎',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3798,7 +3798,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}donate
 ┃╠ ${prefix}report [bug]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -3827,7 +3827,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
@@ -3845,7 +3845,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}buy [option]
 ┃╠${prefix}sell [option]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -3898,7 +3898,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}math [mode]
 ┃╠ ${prefix}suitpvp [tag]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -3927,7 +3927,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}checkvote
 ┃╠${prefix}delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -3942,7 +3942,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}joox [query]
 ┃╠${prefix}soundcloud [url]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -3961,7 +3961,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}ringtone [query]
 ┃╠${prefix}webtoon [query]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -3972,7 +3972,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}animequote (indo)
 ┃╠${prefix}couplepp
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4007,7 +4007,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}dance
 ┃╠${prefix}cringe
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4046,7 +4046,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}blackpink [txt]
 ┃╠ ${prefix}gluetext [txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4065,7 +4065,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}ebinary [reply txt]
 ┃╠ ${prefix}dbinary [reply txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4081,7 +4081,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠ ${prefix}getmsg
 ┃╠ ${prefix}delmsg
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4093,7 +4093,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}next
 ┃╠${prefix}leave
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4102,7 +4102,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╔══✪「 ISLAMIC 」	        
 ┃╠${prefix}juzamma
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4121,7 +4121,7 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}slow [reply aud]
 ┃╠${prefix}squirrel [reply aud]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4159,16 +4159,17 @@ await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}zodiak (indo)
 ┃╠${prefix}shio (indo)
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 Thanks to
-LORD BUDDHA
-Xeon (Me)
+ALMIGHTY
+Ginger
+Xeon
 My family
-And All Friends Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+And All Friends Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "YT","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "😎OWNER😎","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
