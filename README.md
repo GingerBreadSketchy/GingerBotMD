@@ -1,4 +1,5 @@
 <h1 align="center">GINGERBOT MD<br></h1>
+         
 
 
 
@@ -6,6 +7,15 @@
 
 
 # Setup For Deployment 👇
+
+## SCAN QR Using Your Whatsapp Via Linked Devices
+
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
+
+```
+1-After scanning a file will be sent on your whatsapp named session.json and save it. 
+2-Fork this repository and upload the file on your new repository
+```
 
 ## `SETTINGS`
 
