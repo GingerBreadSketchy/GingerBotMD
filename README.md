@@ -3,7 +3,7 @@
 
 
 
-
+## BEFORE SETUP PLEASE FORK THIS REPOSITORY ##
 
 
 # Setup For Deployment 👇
@@ -14,12 +14,12 @@
 
 ```
 1-After scanning a file will be sent on your whatsapp named session.json and save it. 
-2-Fork this repository and upload the file on your new repository
+2- You should Fork this repository and upload the file on your new repository
 ```
 
 ## `SETTINGS`
 
--open config.json and edit all your info
+open setting.json and edit all your info
 
 ## ` BUILDPACKS`
 
