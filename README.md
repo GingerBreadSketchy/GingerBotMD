@@ -89,3 +89,19 @@ npm start
 ```bash
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
+## Developers
+  <div align="center">
+    
+  [![DGXeon](https://github.com/DGXeon.png?size=200)](https://github.com/DGXeon) | [![GingerBreadSketchy](https://github.com/GingerBreadSketchy.png?size=200)](https://github.com/GingerBreadSketchy) 
+----|----
+[DGXeon](https://github.com/DGXeon)|[GingerBreadSketchy](https://github.com/GingerBreadSketchy) 
+Developer, Modifying as Public | Re-Developer, Bug Fixes, Modules, Commits 
+  </div>
+    
+
+
+## License
+This project is protected by `GNU General Public Licence v3.0` license.
+
+### Disclaimer
+`WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
